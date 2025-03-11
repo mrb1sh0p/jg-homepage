@@ -1,0 +1,92 @@
+.contact-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: var(--spacing-base);
+    margin-top: 2rem;
+  }
+  
+  /* Cabeçalho da página de Contato */
+  .contact-header {
+    background-color: var(--color-surface);
+    padding: var(--spacing-base);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .contact-header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color: var(--color-primary);
+  }
+  
+  .contact-header p {
+    color: var(--color-text);
+  }
+  
+  /* Seção do formulário de contato */
+  .contact-form-section {
+    background-color: var(--color-surface);
+    padding: var(--spacing-base);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilização do formulário */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-base);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-family-base);
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  /* Botão de envio */
+  .contact-form button {
+    align-self: flex-start;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover,
+  .contact-form button:focus {
+    background-color: var(--color-secondary);
+  }
+  
+  /* Classe para acessibilidade: elementos visíveis apenas para leitores de tela */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  

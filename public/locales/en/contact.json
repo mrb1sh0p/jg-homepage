@@ -1,0 +1,10 @@
+{
+  "contact": "Contact",
+  "contact_text": "Feel free to get in touch using the form below.",
+  "contact_form": {
+    "name": "Your Name",
+    "email": "Yout Email",
+    "message": "Your Message",
+    "send": "Send Message"
+  }
+}

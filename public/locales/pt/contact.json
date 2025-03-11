@@ -1,0 +1,10 @@
+{
+  "contact": "Contato",
+  "contact_text": "Sinta-se à vontade para entrar em contato usando o formulário abaixo.",
+  "contact_form": {
+    "name": "Seu nome",
+    "email": "Seu e-mail",
+    "message": "Sua mensagem",
+    "send": "Enviar mensagem"
+  }
+}

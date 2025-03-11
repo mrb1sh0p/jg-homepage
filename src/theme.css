@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Variáveis globais para cores, fontes, espaçamentos e dimensões */
+:root {
+  --color-background: #121212;
+  --color-surface: #1e1e1e73;
+  --color-primary: #bb86fc;
+  --color-secondary: #03dac6;
+  --color-text: #e0e0e0;
+  --color-text-secondary: #b0b0b0;
+  --color-border: #333333;
+  --font-family-base: "Inter", sans-serif;
+  --font-size-base: 16px;
+  --spacing-base: 1rem;
+  --max-width-container: 1200px;
+}
+
+/* Reset e configurações globais */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Container principal do App */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Layout que organiza a Sidebar e o conteúdo */
+.layout {
+  display: flex;
+  flex: 1;
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  width: 100%;
+}
+/* Área de Conteúdo */
+.content-wrapper {
+  flex: 1;
+  padding: var(--spacing-base);
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--color-surface);
+  padding: var(--spacing-base);
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Estilos para links, títulos e parágrafos (exemplo de personalização) */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+p {
+  margin-bottom: var(--spacing-base);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar-wrapper {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+}
