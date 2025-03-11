@@ -34,14 +34,13 @@ body {
   color: var(--color-text);
   font-family: var(--font-family-base);
   line-height: 1.6;
-  min-height: 100vh;
+
 }
 
 /* Container principal do App */
 .app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 /* Layout que organiza a Sidebar e o conteúdo */
