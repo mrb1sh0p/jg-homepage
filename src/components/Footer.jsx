@@ -1,4 +1,4 @@
-import "./css/Footer.css";
+import "./css/footer.css";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {

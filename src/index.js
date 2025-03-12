@@ -1,3 +1,4 @@
+import "./effects.css";
 import "./theme.css";
 import i18n from "./i18n/config";
 import { BrowserRouter as Router } from "react-router-dom";

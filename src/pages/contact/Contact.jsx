@@ -1,6 +1,7 @@
-import "./contact.css";
+import "./Contact.css";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import Links from "../links/Links";
 
 const Contact = () => {
   const { t } = useTranslation("contact");
@@ -67,7 +68,7 @@ const Contact = () => {
           </div>
           <div className="form-group">
             <label htmlFor="message" className="sr-only">
-            {t("contact_form.message")}
+              {t("contact_form.message")}
             </label>
             <textarea
               id="message"
@@ -80,6 +81,10 @@ const Contact = () => {
           </div>
           <button type="submit">{t("contact_form.send")}</button>
         </form>
+      </section>
+
+      <section className="social-media">
+        <Links />
       </section>
     </div>
   );

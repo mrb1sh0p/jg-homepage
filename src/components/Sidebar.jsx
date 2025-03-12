@@ -1,9 +1,11 @@
 import "./css/sidebar.css";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Sidebar = () => {
   const { t } = useTranslation("sidebar");
+  const location = useLocation();
 
   return (
     <div className="sidebar">
@@ -18,19 +20,33 @@ const Sidebar = () => {
       <nav className="nav-links">
         <ul>
           <li>
-            <Link to="/">{t("about")}</Link>
+            <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+              {t("about")}
+            </Link>
           </li>
           <li>
-            <Link to="/contact">{t("contact")}</Link>
+            <Link
+              to="/contact"
+              className={location.pathname === "/contact" ? "active" : ""}
+            >
+              {t("contact")}
+            </Link>
           </li>
           <li>
-            <Link to="/jobs">{t("jobs")}</Link>
+            <Link
+              to="/projects"
+              className={location.pathname === "/projects" ? "active" : ""}
+            >
+              {t("projects")}
+            </Link>
           </li>
           <li>
-            <Link to="/links">{t("links")}</Link>
-          </li>
-          <li>
-            <Link to="/posts">{t("posts")}</Link>
+            <Link
+              to="/posts"
+              className={location.pathname === "/posts" ? "active" : ""}
+            >
+              {t("posts")}
+            </Link>
           </li>
         </ul>
       </nav>
