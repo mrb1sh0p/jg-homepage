@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar";
 import { Routes, Route } from "react-router-dom";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
-import Jobs from "./pages/jobs/Jobs";
+import Jobs from "./pages/jobs/JobsPage";
 import LinksPage from "./pages/links/Links";
 import Posts from "./pages/posts/Posts";
 import Footer from "./components/Footer";
